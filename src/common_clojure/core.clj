@@ -520,8 +520,9 @@
 (dispatch-reader-macro \t (fn [_ _] true))
 (dispatch-reader-macro \f (fn [_ _] false))
 
-(ns-unmap *ns* 'map-n)
-(defn map-n
- ([f n] (map f (range 0 n)))
- ([f m n] (loop ((i m) (c [])) (if (> i n) c (recur (+ i 1) (conj c (f i))))))
- ([f m n stride] (loop ((i m) (c [])) (if (> i n) c (recur (+ i stride) (conj c (f i)))))))
+;; TODO Need to replace the default
+;; (ns-unmap *ns* 'map-n)
+;; (defn map-n
+;;  ([f n] (map f (range 0 n)))
+;;  ([f m n] (loop ((i m) (c [])) (if (> i n) c (recur (+ i 1) (conj c (f i))))))
+;;  ([f m n stride] (loop ((i m) (c [])) (if (> i n) c (recur (+ i stride) (conj c (f i)))))))
