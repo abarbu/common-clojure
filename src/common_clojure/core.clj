@@ -11,6 +11,9 @@
 (require '[taoensso.timbre :as log])
 (require '[clansi.core :as color])
 
+;; Load up OpenCV
+(clojure.lang.RT/loadLibrary org.opencv.core.Core/NATIVE_LIBRARY_NAME)
+
 (import java.io.StringWriter java.io.File)
 (import 'java.text.NumberFormat)
 

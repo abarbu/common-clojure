@@ -1,4 +1,4 @@
-(defproject com._0xab/common-clojure "0.1.0"
+(defproject com._0xab/common-clojure "0.2.0-SNAPSHOT"
   :description "Misc Clojure code shared among multiple projects"
   :url "https://github.com/abarbu/common-clojure"
   :license {:name "Eclipse Public License"
