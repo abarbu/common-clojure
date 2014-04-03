@@ -50,6 +50,9 @@
                  (.setMaximumFractionDigits f precision)
                  (.format f n))))
 
+(define (resource-path x)
+ (.getPath (clojure.java.io/resource x)))
+
 (defn x [v] (nth v 0))
 (defn y [v] (nth v 1))
 (defn z [v] (nth v 2))
