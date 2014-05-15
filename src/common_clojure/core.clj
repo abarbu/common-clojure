@@ -485,7 +485,7 @@
 
 ;; Map indexed flips the order of arguments.. this is _insane_
 ;; My local one in the current namespace is corect
-(defn map-indexed [f l]
+(defn map-indexed' [f l]
  ;; needs work: To eliminate REVERSE.
  (loop [i 0 l l c '()]
   (if (null? l)
