@@ -14,13 +14,18 @@
 (import java.io.StringWriter java.io.File)
 (import 'java.text.NumberFormat)
 
+;; The following 3 incanter packages aren't included below because
+;; even just including them requires an X connection. This seems like
+;; an upstream bug.
+;;
+;; incanter.svg incanter.pdf incanter.charts 
+
 (combine-namespaces
  i
- incanter.bayes incanter.censored incanter.charts incanter.core incanter.datasets
+ incanter.bayes incanter.censored incanter.core incanter.datasets
  incanter.distributions incanter.excel incanter.infix incanter.interpolation
- incanter.io incanter.latex incanter.mongodb incanter.optimize incanter.pdf
- incanter.som
- incanter.stats incanter.svg incanter.symbolic incanter.zoo)
+ incanter.io incanter.latex incanter.mongodb incanter.optimize
+ incanter.som incanter.stats incanter.symbolic incanter.zoo)
 
 ;; Submit to bwo/monads
 (defmacro munless
