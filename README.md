@@ -2,9 +2,7 @@
 
 Misc Clojure code shared among multiple projects
 
-```clojure
-[com._0xab/common-clojure "0.4.0"]
-```
+[![Clojars Project](http://clojars.org/com._0xab/common-clojure/latest-version.svg)](https://clojars.org/com._0xab/common-clojure)
 
 ## License
 
